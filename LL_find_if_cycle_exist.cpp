@@ -16,10 +16,9 @@ bool has_cycle(Node* head) {
         return false;
     else
     {
-        Node *prev=head,*ahead=head->next;
+        Node *ahead=head->next;
         while(ahead!=NULL && c<count)
         {
-            prev=prev->next;
             ahead=ahead->next;
             c++;
         }
